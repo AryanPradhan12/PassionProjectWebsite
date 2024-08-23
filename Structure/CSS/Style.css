@@ -1,0 +1,50 @@
+/* Styling for the header */
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Styling for the main content */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+}
+
+/* Ensures the content does not overlap with the fixed header */
+main {
+    margin-top: 150px; /* Adjusted to avoid overlap with the header */
+    padding: 20px;
+}
+
+h1 {
+    color: white; /* Text color in header */
+}
+
+/* Styling for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
