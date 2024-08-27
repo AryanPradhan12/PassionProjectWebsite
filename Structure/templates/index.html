@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passion Project Website</title>
-    <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 
@@ -16,14 +16,18 @@
         <p>This is a basic website with Python, HTML, and CSS.</p>
         
         <!-- Example Button to Call Python Function -->
-        <button onclick="callPythonFunction()">Run Python Function</button>
+        <button id="run-button">Run Python Function</button>
+        <p id="output"></p>
     </main>
 
     <script>
-        function callPythonFunction() {
-            // This function will later call a Python function
-            alert("This will call a Python function");
-        }
+        document.getElementById("run-button").addEventListener("click", function() {
+            fetch('/run-python-function')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById("output").innerText = data.result;
+            });
+        });
     </script>
 </body>
 </html>
