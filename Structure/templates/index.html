@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passion Project Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        .button-group {
+            margin-bottom: 20px;
+        }
+        .button-group button {
+            margin: 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .button-group button.selected {
+            background-color: #0056b3;
+        }
+        .button-group button:focus {
+            outline: none;
+        }
+        .button-group button:active {
+            transform: scale(0.98);
+        }
+        #recommendation {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function selectOption(group, option) {
+            // Deselect all buttons in the group
+            document.querySelectorAll(`.${group} button`).forEach(btn => {
+                btn.classList.remove('selected');
+            });
+            // Set the hidden input value
+            document.getElementById(group).value = option;
+            // Add the 'selected' class to the clicked button
+            document.getElementById(`${group}-btn-${option.replace(/ /g, '-')}`).classList.add('selected');
+        }
+
+        function resetSelection() {
+            document.querySelectorAll('input[type=hidden]').forEach(input => input.value = '');
+            document.querySelectorAll('button').forEach(button => button.classList.remove('selected'));
+        }
+    </script>
 </head>
 <body>
 
@@ -14,10 +62,60 @@
     
     <main>
         <h2>Find out how to convert your passions into projects!</h2>
-        
+        <h3>Made by: Aryan Pradhan and Ruhaan Sahi</h3>
+        <h4>Instructions</h4>
+        <p>Chose an option from each of the following questions and click on submit, we will then provide a suggestion for a possible passion project that you can do. These suggesstions have been made generalized to help inspire you, hence after recieving said recommendation, please feel free to further specialize into the passion project.</p>
         <!-- Example Button to Call Python Function -->
-        <button id="run-button">Run Python Function</button>
-        <p id="output"></p>
+        <form action="/recommendation" method="POST">
+            <!-- Passion Selection -->
+            <div class="button-group passion-group">
+                <h3>Select Your Passion:</h3>
+                <input type="hidden" id="passion" name="passion" value="">
+                <button type="button" id="passion-btn-science-and-technology" onclick="selectOption('passion', 'Science and technology')">Science and Technology</button>
+                <button type="button" id="passion-btn-nature-and-environment" onclick="selectOption('passion', 'Nature and environment')">Nature and Environment</button>
+                <button type="button" id="passion-btn-entrepreneurship-and-business" onclick="selectOption('passion', 'Entrepreneurship and business')">Entrepreneurship and Business</button>
+                <button type="button" id="passion-btn-arts-and-creativity" onclick="selectOption('passion', 'Arts and creativity')">Arts and Creativity</button>
+                <button type="button" id="passion-btn-music" onclick="selectOption('passion', 'Music')">Music</button>
+                <button type="button" id="passion-btn-sports" onclick="selectOption('passion', 'Sports')">Sports</button>
+                <button type="button" id="passion-btn-performance-and-expression" onclick="selectOption('passion', 'Performance and expression')">Performance and Expression</button>
+                <button type="button" id="passion-btn-science" onclick="selectOption('passion', 'Science and technology')">Science and Technology</button>
+                <button type="button" id="passion-btn-nature" onclick="selectOption('passion', 'Nature and environment')">Nature and Environment</button>
+                <button type="button" id="passion-btn-entrepreneurship" onclick="selectOption('passion', 'Entrepreneurship and business')">Entrepreneurship and Business</button>
+            </div>
+    
+            <!-- Activity Selection -->
+            <div class="button-group activity-group">
+                <h3>Select Your Activity:</h3>
+                <input type="hidden" id="activity" name="activity" value="">
+                <button type="button" id="activity-btn-writing" onclick="selectOption('activity', 'Writing')">Writing</button>
+                <button type="button" id="activity-btn-reading" onclick="selectOption('activity', 'Reading')">Reading</button>
+                <button type="button" id="activity-btn-coding" onclick="selectOption('activity', 'Coding')">Coding</button>
+                <button type="button" id="activity-btn-exercising" onclick="selectOption('activity', 'Exercising')">Exercising</button>
+                <button type="button" id="activity-btn-painting" onclick="selectOption('activity', 'Painting')">Painting</button>
+                <button type="button" id="activity-btn-photography" onclick="selectOption('activity', 'Photography/videography')">Photography/Videography</button>
+                <button type="button" id="activity-btn-learning" onclick="selectOption('activity', 'Learning/personal development')">Learning/Personal Development</button>
+                <button type="button" id="activity-btn-volunteering" onclick="selectOption('activity', 'Volunteering and community work')">Volunteering and Community Work</button>
+            </div>
+    
+            <!-- Filler Question -->
+            <div class="button-group hours-group">
+                <h3>How many hours per week do you practice this activity?</h3>
+                <input type="hidden" id="hours" name="hours" value="">
+                <button type="button" id="hours-btn-1" onclick="selectOption('hours', '1-5')">1-5</button>
+                <button type="button" id="hours-btn-2" onclick="selectOption('hours', '6-10')">6-10</button>
+                <button type="button" id="hours-btn-3" onclick="selectOption('hours', '11-15')">11-15</button>
+                <button type="button" id="hours-btn-4" onclick="selectOption('hours', '16+')">16+</button>
+            </div>
+    
+            <button type="submit">Submit</button>
+        </form>
+    
+        {% if recommendation %}
+            <div id="recommendation">
+                <h2>Your Recommended Project:</h2>
+                <p>{{ recommendation }}</p>
+            </div>
+        {% endif %}
     </main>
 
     <script>
