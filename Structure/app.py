@@ -88,7 +88,21 @@ def recommendation():
     # Handle the form submission and generate a recommendation
     passion = request.form.get('passion')
     activity = request.form.get('activity')
-    recommendation = f"We recommend combining your passion for {passion} with {activity}."
+    hours = request.form.get('hours')
+
+    # Debugging: Print the received values (optional)
+    app.logger.debug(f"Passion: {passion}, Activity: {activity}, Hours: {hours}")
+
+    # Retrieve the recommendation from the dictionary
+    recommendation = recommendations.get(passion, {}).get(activity)
+
+    if not recommendation:
+        recommendation = "No recommendation found for the selected options."
+
+    # Optionally, incorporate hours into the recommendation
+    if recommendation != "No recommendation found for the selected options." and hours:
+        recommendation += f" You spend {hours} hours per week on this activity."
+
     return render_template('index.html', recommendation=recommendation)
 
 if __name__ == '__main__':
