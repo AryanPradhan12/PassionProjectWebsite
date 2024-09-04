@@ -5,16 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subpage</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/subpage_style.css') }}">
-
+    <style>
+        .item1 { grid-area: header; }
+        .item2 { grid-area: main; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: right; }
+        
+        .grid-container {
+          display: grid;
+          grid-template-areas:
+            'header header header header header header'
+            'main main main right right right'
+            'main main main right right right';
+          gap: 10px;
+          background-color: red;
+          padding: 10px;
+          margin: 20px;
+        }
+        
+        .grid-container > div {
+          background-color: black;
+          text-align: center;
+          padding: 20px;
+          font-size: 30px;
+          color: white;
+        }
+        </style>
 </head>
 <header>
     <h1>Gain inspiration from existing passion projects!</h1>
     <button onclick="window.location.href='/'">Back to Home</button>
 </header>
 <body>
-
-    <h2>Welcome to the Subpage</h2>
-    <p>This is another page linked from the index page.</p>
-
+    <h2>Take inspiration from existing passion projects. These students put their time and efforts into turing their passions into projects that show their talents and skills learnt along the process of exploring their passion. Find the passion project that connects with you the most and experiment with it!</h2>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Main</div>
+        <div class="item3">Main</div>  
+        <div class="item4">Right</div>
+        <div class="item5">Right</div>
+      </div>
 </body>
 </html>
