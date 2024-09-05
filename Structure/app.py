@@ -88,7 +88,7 @@ def recommendation():
     # Handle the form submission and generate a recommendation
     passion = request.form.get('passion')
     activity = request.form.get('activity')
-    recommendation = recommendations.get(passion, {}).get(activity, "No recommendation available for the selected options.")
+    recommendation = recommendations.get(passion, {}).get(activity, {}) #"No recommendation available for the selected options."
     return render_template('index.html', recommendation=recommendation)
     #recommendation = f"We recommend combining your passion for {passion} with {activity}."
     #return render_template('index.html', recommendation=recommendation)

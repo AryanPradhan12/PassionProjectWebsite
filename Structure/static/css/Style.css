@@ -46,7 +46,7 @@ button {
     background-color: #555;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 40px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -60,10 +60,14 @@ button:hover {
 .toggle-btn {
     background-color: #f0f0f0;
     border: 2px solid #000;
-    border-radius: 20px;
+    border-radius: 40px;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background-color: grey;
 }
 
 .toggle-btn.clicked {
