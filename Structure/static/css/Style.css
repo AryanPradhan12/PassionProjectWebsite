@@ -1,6 +1,6 @@
 /* Styling for the header */
 header {
-    background-color: black;
+    background-color: #024950;
     color: white;
     padding: 20px;
     text-align: center;
@@ -16,7 +16,7 @@ header {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #AFDDE5;
     color: #333;
     text-align: center;
     padding: 0;
@@ -30,11 +30,11 @@ main {
 }
 
 h1 {
-    color: red; /* Text color in header */
+    color: #0FA4AF; /* Text color in header */
     font-size: 45px;
 }
 h2 {
-    color: red;
+    color: #0FA4AF;
 }
 h4 {
     text-decoration: underline;
