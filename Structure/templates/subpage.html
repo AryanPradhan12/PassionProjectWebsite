@@ -19,15 +19,20 @@
           height: 1000px;
         }
         .item2 img {
-          width: 50%;
-          height: 50%;
+          width: 40%;
+          height: 40%;
           object-fit: cover;
-          margin-top: 10px;
+          margin-top: 2px;
         }
         .item2 p {
           margin-top: 5px;    
           padding: 0;
           font-size: 20px;         
+        }
+        
+        .item2 h5 {
+          font-size: 28px;
+          font-weight: bold;
         }
 
         .item3 { 
@@ -38,6 +43,10 @@
           margin-top: 5px;    
           padding: 0;
           font-size: 20px;         
+        }
+        .item3 h5 {
+          font-size: 28px;
+          font-weight: bold;
         }
 
         .item4 { 
@@ -204,7 +213,9 @@
     <div class="grid-container">
         <div class="item1">How to make your Passion Project!</div>
         <div class="item2"> 
+          <h5>
           Compile an Illustrated Storybook or Poetry Collection
+          </h5>
           <img src="{{ url_for('static', filename='images/Image1.png') }}" alt="Poetry Collection"/> 
           <p>
             Write a series of short stories or poems and create accompanying illustrations or artwork. Publish the collection as an e-book, physical book, or online series.
@@ -212,8 +223,10 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/K7YL023V3Ug?si=R669qOdZA8UaKuBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div class="item3"> 
+          <h5>
           Develop an Art Gallery Website 
-          <img src="{{ url_for('static', filename='images/Image2.png') }}" alt="Gallery website" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          </h5>
+          <img src="{{ url_for('static', filename='images/Image2.png') }}" alt="Gallery website" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Create a personal or community website that functions as a virtual art gallery. Users can upload and showcase their artwork, and the site could feature interactive elements like virtual tours or art critiques.
           </p>
@@ -221,7 +234,7 @@
         </div>  
         <div class="item4"> 
           Create a Music Analysis Blog 
-          <img src="{{ url_for('static', filename='images/Image3.png') }}" alt="Music Blog" style="width: 50%; height: 50%; margin-top: 10px;"/>
+          <img src="{{ url_for('static', filename='images/Image3.png') }}" alt="Music Blog" style="width: 40%; height: 40%; margin-top: 2px;"/>
           <p>
             Start a blog where you analyze lyrics, compositions, and music theory in your favorite songs or genres. Offer insights into how music and literature intertwine.
           </p> 
@@ -229,7 +242,7 @@
         </div>
         <div class="item5"> 
           Design a Music-Driven Workout Playlist 
-          <img src="{{ url_for('static', filename='images/Image4.png') }}" alt="Workout playlist" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image4.png') }}" alt="Workout playlist" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Curate and share workout playlists with different tempos and rhythms to match various exercise routines. You could also create a series of workout videos synchronized to music.
           </p>
@@ -237,7 +250,7 @@
         </div>
         <div class="item6"> 
           Design a Personal or Community Fitness Program 
-          <img src="{{ url_for('static', filename='images/Image5.png') }}" alt="Community fitness program" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image5.png') }}" alt="Community fitness program" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Create a structured fitness program tailored to a specific sport or fitness goal. Share the program through a blog, social media, or by organizing group workouts in your community.
           </p>
@@ -245,7 +258,7 @@
         </div>
         <div class="item7"> 
           Learn and Teach a New Sport 
-          <img src="{{ url_for('static', filename='images/Image6.png') }}" alt="Learn a new sport" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image6.png') }}" alt="Learn a new sport" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Take up a new sport and document your learning process. Share tutorials, tips, and your experiences through videos or blog posts, encouraging others to try the sport as well
           </p>
@@ -253,7 +266,7 @@
         </div>
         <div class="item8"> 
           Film and Edit a Short Performance Film 
-          <img src="{{ url_for('static', filename='images/Image7.png') }}" alt="Edit a short filf" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image7.png') }}" alt="Edit a short filf" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Produce a short film that focuses on performance art, dance, or a theatrical piece. Use your videography skills to capture and edit the performance in a way that enhances the storytelling
           </p>
@@ -261,7 +274,7 @@
         </div>  
         <div class="item9"> 
           Organize a Community Talent Show 
-          <img src="{{ url_for('static', filename='images/Image8.png') }}" alt="Talent show" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image8.png') }}" alt="Talent show" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Plan and host a talent show in your community, providing a platform for people of all ages to express themselves through performance. Use the event to raise awareness or funds for a cause.
           </p>
@@ -269,7 +282,7 @@
         </div>
         <div class="item10"> 
           Create a science poster to educate kids about science
-          <img src="{{ url_for('static', filename='images/Image9.png') }}" alt="Science Workshop" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image9.png') }}" alt="Science Workshop" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Organize and lead a hands-on science workshop for children in your community. Design experiments or projects that are fun, educational, and encourage curiosity about the natural world.
           </p>
@@ -277,7 +290,7 @@
         </div>
         <div class="item11"> 
           Take a Business Course and Create a Capstone Project 
-          <img src="{{ url_for('static', filename='images/Image10.png') }}" alt="Capstone Project" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image10.png') }}" alt="Capstone Project" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Enroll in an online course in a scientific or technological field that interests you. Create a capstone project based on what you learn and share it with others through a blog, video, or presentation.
           </p>
@@ -285,7 +298,7 @@
         </div>
         <div class="item12"> 
           Create Environmental Awareness Artwork 
-          <img src="{{ url_for('static', filename='images/Image11.png') }}" alt="Environmental Awareness Artwork" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image11.png') }}" alt="Environmental Awareness Artwork" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Use your art to raise awareness about environmental issues. Create paintings or digital art that highlight the beauty of nature and the importance of conservation. You could also create art from recycled materials.
           </p>
@@ -293,7 +306,7 @@
         </div>
         <div class="item13"> 
           Photograph Local Wildlife and Ecosystems 
-          <img src="{{ url_for('static', filename='images/Image12.png') }}" alt="Wildlife Photographs" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image12.png') }}" alt="Wildlife Photographs" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Use photography or videography to document local wildlife, ecosystems, and environmental challenges. Create a photo series or a documentary that showcases the natural beauty of your area and the importance of protecting it
           </p>
@@ -301,7 +314,7 @@
         </div>
         <div class="item14"> 
           Develop a Business Management Tool 
-          <img src="{{ url_for('static', filename='images/Image13.png') }}" alt="Buisness Management Tool" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image13.png') }}" alt="Buisness Management Tool" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Create a software tool that helps small business owners manage their operations more effectively. This could be a CRM system, inventory management tool, or a financial tracking app.
           </p>
@@ -309,7 +322,7 @@
         </div>
         <div class="item15"> 
           Create an Online Course or Workshop 
-          <img src="{{ url_for('static', filename='images/Image14.png') }}" alt="Online Course" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <img src="{{ url_for('static', filename='images/Image14.png') }}" alt="Online Course" style="width: 40%; height: 40%; margin-top: 2px;"/> 
           <p>
             Leverage your knowledge in a specific area to create an online course or workshop. Teach others valuable skills related to entrepreneurship, business management, or personal development. 
           </p>
