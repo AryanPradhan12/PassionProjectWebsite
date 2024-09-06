@@ -4,7 +4,7 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
-    border: 5px solid gray;
+    border: 5px solid #003135;
     position: fixed;
     top: 0;
     width: 96.5%;
@@ -52,13 +52,13 @@ button {
 }
 
 button:hover {
-    background-color: green;
+    background-color: #003135;
 }
 
 
 
 .toggle-btn {
-    background-color: #f0f0f0; 
+    background-color: white; 
     border: 2px solid #000;
     border-radius: 40px;
     padding: 10px 20px;
@@ -69,11 +69,11 @@ button:hover {
 
 
 .toggle-btn.clicked {
-    background-color: grey;
-    color: white;
+    background-color: #003135;
+    color: black;
 }
 
 .toggle-btn:not(.clicked) {
-    background-color: #f0f0f0;
+    background-color: white;
     color: black;
 }
