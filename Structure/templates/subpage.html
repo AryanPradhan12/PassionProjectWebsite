@@ -6,45 +6,316 @@
     <title>Subpage</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/subpage_style.css') }}">
     <style>
-        .item1 { grid-area: header; }
-        .item2 { grid-area: main; }
-        .item3 { grid-area: main; }
-        .item4 { grid-area: right; }
-        .item5 { grid-area: right; }
+        .item1 { 
+          grid-area: header; 
+          height: 75px; 
+          font-weight: bold; 
+          text-align: center; 
+          color: white;
+        }
+
+        .item2 { 
+          grid-area: main1; 
+          height: 1000px;
+        }
+        .item2 img {
+          width: 50%;
+          height: 50%;
+          object-fit: cover;
+          margin-top: 10px;
+        }
+        .item2 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item3 { 
+          grid-area: right1; 
+          height: 1000px;
+        }
+        .item3 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item4 { 
+          grid-area: main2; 
+          height: 1000px;
+        }
+        .item4 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item5 { 
+          grid-area: right2;
+          height: 1000px; 
+        }
+        .item5 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item6 { 
+          grid-area: main3; 
+          height: 1000px;
+        }
+        .item6 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item7 { 
+          grid-area: right3; 
+          height: 1000px;
+        }
+        .item7 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item8 { 
+          grid-area: main4; 
+          height: 1000px;
+        }
+        .item8 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item9 { 
+          grid-area: right4; 
+          height: 1000px;
+        }
+        .item9 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item10 { 
+          grid-area: main5; 
+          height: 1000px;
+        }
+        .item10 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item11 { 
+          grid-area: right5; 
+          height: 1000px;
+        }
+        .item11 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item12 { 
+          grid-area: main6; 
+          height: 1000px;
+        }
+        .item12 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
         
+        .item13 { 
+          grid-area: right6; 
+          height: 1000px;
+        }
+        .item13 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item14 { 
+          grid-area: main7; 
+          height: 1000px;
+        }
+        .item14 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
+        .item15 { 
+          grid-area: right7; 
+          height: 1000px;
+        }
+        .item15 p {
+          margin-top: 5px;    
+          padding: 0;
+          font-size: 20px;         
+        }
+
         .grid-container {
           display: grid;
           grid-template-areas:
             'header header header header header header'
-            'main main main right right right'
-            'main main main right right right';
+            'main1 main1 main1 right1 right1 right1'
+            'main2 main2 main2 right2 right2 right2'
+            'main3 main3 main3 right3 right3 right3'
+            'main4 main4 main4 right4 right4 right4'
+            'main5 main5 main5 right5 right5 right5'
+            'main6 main6 main6 right6 right6 right6'
+            'main7 main7 main7 right7 right7 right7';
           gap: 10px;
-          background-color: red;
+          background-color: #ff4f14;
           padding: 10px;
-          margin: 20px;
+          margin: 5px;
+          border-radius: 10px;
         }
         
         .grid-container > div {
-          background-color: black;
+          background-color: #333333;
           text-align: center;
-          padding: 20px;
-          font-size: 30px;
-          color: white;
+          padding: 10px;
+          font-size: 36px;
+          color: #ffffff;
+          border-radius: 14px;
         }
-        </style>
+
+        
+    </style>
 </head>
 <header>
     <h1>Gain inspiration from existing passion projects!</h1>
     <button onclick="window.location.href='/'">Back to Home</button>
 </header>
 <body>
-    <h2>Take inspiration from existing passion projects. These students put their time and efforts into turing their passions into projects that show their talents and skills learnt along the process of exploring their passion. Find the passion project that connects with you the most and experiment with it!</h2>
+    <h2>
+        Learn how to create your own projects based on the recommendations that have been given and 
+        achieve your goals by watching tutorials using the templates we provide.   
+        Find the passion project that connects with you the most and experiment with it!
+    </h2>
+    
     <div class="grid-container">
-        <div class="item1">Header</div>
-        <div class="item2">Main</div>
-        <div class="item3">Main</div>  
-        <div class="item4">Right</div>
-        <div class="item5">Right</div>
-      </div>
+        <div class="item1">How to make your Passion Project!</div>
+        <div class="item2"> 
+          Compile an Illustrated Storybook or Poetry Collection
+          <img src="{{ url_for('static', filename='images/image_1.png') }}" alt="Poetry Collection"/> 
+          <p>
+            Write a series of short stories or poems and create accompanying illustrations or artwork. Publish the collection as an e-book, physical book, or online series.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/K7YL023V3Ug?si=R669qOdZA8UaKuBZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item3"> 
+          Develop an Art Gallery Website 
+          <img src="{{ url_for('static', filename='images/image_2.png') }}" alt="Gallery website" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Create a personal or community website that functions as a virtual art gallery. Users can upload and showcase their artwork, and the site could feature interactive elements like virtual tours or art critiques.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/TulXGQydVIo?si=s5d7FggER_KzVS7B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>  
+        <div class="item4"> 
+          Create a Music Analysis Blog 
+          <img src="{{ url_for('static', filename='images/image_3.png') }}" alt="Music Blog" style="width: 50%; height: 50%; margin-top: 10px;"/>
+          <p>
+            Start a blog where you analyze lyrics, compositions, and music theory in your favorite songs or genres. Offer insights into how music and literature intertwine.
+          </p> 
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xAbEVnRWlQs?si=ejX_tQ_eEi3KzNGi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item5"> 
+          Design a Music-Driven Workout Playlist 
+          <img src="{{ url_for('static', filename='images/image_4.png') }}" alt="Workout playlist" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Curate and share workout playlists with different tempos and rhythms to match various exercise routines. You could also create a series of workout videos synchronized to music.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/kqDxQC3iFE4?si=FFZssKBD8MZNeexA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item6"> 
+          Design a Personal or Community Fitness Program 
+          <img src="{{ url_for('static', filename='images/image_5.png') }}" alt="Community fitness program" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Create a structured fitness program tailored to a specific sport or fitness goal. Share the program through a blog, social media, or by organizing group workouts in your community.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/hdtWEM3Oqwc?si=2_xtYdt7JsBOEgVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item7"> 
+          Learn and Teach a New Sport 
+          <img src="{{ url_for('static', filename='images/image_6.png') }}" alt="Learn a new sport" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Take up a new sport and document your learning process. Share tutorials, tips, and your experiences through videos or blog posts, encouraging others to try the sport as well
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QGSkbi3eDYM?si=P_30HI9e4ZVn4T4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item8"> 
+          Film and Edit a Short Performance Film 
+          <img src="{{ url_for('static', filename='images/image_7.png') }}" alt="Edit a short filf" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Produce a short film that focuses on performance art, dance, or a theatrical piece. Use your videography skills to capture and edit the performance in a way that enhances the storytelling
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AoNcMhxNHGk?si=Qu7C9HZSRAkuTRMf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>  
+        <div class="item9"> 
+          Organize a Community Talent Show 
+          <img src="{{ url_for('static', filename='images/image_8.png') }}" alt="Talent show" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Plan and host a talent show in your community, providing a platform for people of all ages to express themselves through performance. Use the event to raise awareness or funds for a cause.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/M_tQyGJF7Jk?si=pO8xHy_sEhau3lVR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item10"> 
+          Create a science poster to educate kids about science
+          <img src="{{ url_for('static', filename='images/image_9.png') }}" alt="Science Workshop" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Organize and lead a hands-on science workshop for children in your community. Design experiments or projects that are fun, educational, and encourage curiosity about the natural world.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1RwJbhkCA58?si=DiMK_QEKrRQqi8EC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item11"> 
+          Take a Business Course and Create a Capstone Project 
+          <img src="{{ url_for('static', filename='images/image_10.png') }}" alt="Capstone Project" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Enroll in an online course in a scientific or technological field that interests you. Create a capstone project based on what you learn and share it with others through a blog, video, or presentation.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/xS5pohfxflQ?si=pxm2TTIYAbkxfJkn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item12"> 
+          Create Environmental Awareness Artwork 
+          <img src="{{ url_for('static', filename='images/image_11.png') }}" alt="Environmental Awareness Artwork" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Use your art to raise awareness about environmental issues. Create paintings or digital art that highlight the beauty of nature and the importance of conservation. You could also create art from recycled materials.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/_d3RIE195JI?si=_c140zXv9PWDTgm1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item13"> 
+          Photograph Local Wildlife and Ecosystems 
+          <img src="{{ url_for('static', filename='images/image_12.png') }}" alt="Wildlife Photographs" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Use photography or videography to document local wildlife, ecosystems, and environmental challenges. Create a photo series or a documentary that showcases the natural beauty of your area and the importance of protecting it
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/gKiGwUvH7z8?si=Q2lMIRotk3UBye-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item14"> 
+          Develop a Business Management Tool 
+          <img src="{{ url_for('static', filename='images/image_13.png') }}" alt="Buisness Management Tool" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Create a software tool that helps small business owners manage their operations more effectively. This could be a CRM system, inventory management tool, or a financial tracking app.
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/WShnYl3DE9U?si=RlpliZRVxBiHoAPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="item15"> 
+          Create an Online Course or Workshop 
+          <img src="{{ url_for('static', filename='images/image_14.png') }}" alt="Online Course" style="width: 50%; height: 50%; margin-top: 10px;"/> 
+          <p>
+            Leverage your knowledge in a specific area to create an online course or workshop. Teach others valuable skills related to entrepreneurship, business management, or personal development. 
+          </p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1PiuGCTP4PU?si=AQoWc51y141sCavL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
 </body>
 </html>

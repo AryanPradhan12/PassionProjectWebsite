@@ -58,7 +58,7 @@ button:hover {
 
 
 .toggle-btn {
-    background-color: #f0f0f0;
+    background-color: #f0f0f0; 
     border: 2px solid #000;
     border-radius: 40px;
     padding: 10px 20px;
@@ -66,9 +66,7 @@ button:hover {
     transition: background-color 0.3s ease;
 }
 
-.toggle-btn:hover {
-    background-color: grey;
-}
+
 
 .toggle-btn.clicked {
     background-color: grey;
