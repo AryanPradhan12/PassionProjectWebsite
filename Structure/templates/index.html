@@ -48,14 +48,14 @@
             
             // Remove 'selected' class from all buttons in the group
             buttons.forEach(btn => {
-                btn.classList.remove('selected');
+                btn.classList.remove('clicked');
             });
             
             // Update hidden input field with the selected option
             document.getElementById(group).value = option;
             
             // Add 'selected' class to the clicked button
-            document.getElementById(`${group}-btn-${option.replace(/ /g, '-')}`).classList.add('selected');
+            document.getElementById(`${group}-btn-${option.replace(/ /g, '-')}`).classList.add('clicked');
         }
     
         // Function to handle toggle button color change
@@ -128,9 +128,9 @@
             <div class="button-group hours-group">
                 <h3>How many hours per week do you practice this activity?</h3>
                 <input type="hidden" id="hours" name="hours" value="">
-                <button type="button" class="toggle-btn" id="hours-btn-1-5" onclick="selectOption('hours', '1-5')">1-5</button>
-                <button type="button" class="toggle-btn" id="hours-btn-6-10" onclick="selectOption('hours', '6-10')">6-10</button>
-                <button type="button" class="toggle-btn" id="hours-btn-11-15" onclick="selectOption('hours', '11-15')">11-15</button>
+                <button type="button" class="toggle-btn" id="hours-btn-5" onclick="selectOption('hours', '5+')">1-5</button>
+                <button type="button" class="toggle-btn" id="hours-btn-10" onclick="selectOption('hours', '10+')">6-10</button>
+                <button type="button" class="toggle-btn" id="hours-btn-15" onclick="selectOption('hours', '15+')">11-15</button>
                 <button type="button" class="toggle-btn" id="hours-btn-16" onclick="selectOption('hours', '16+')">16+</button>
             </div>
     
