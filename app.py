@@ -79,6 +79,10 @@ recommendations = {
 def index():
     return render_template('index.html')
 
+@app.route('/index')
+def home():
+    return render_template('home.html')
+
 @app.route('/subpage')
 def subpage():
     return render_template('subpage.html')

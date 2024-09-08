@@ -1,0 +1,79 @@
+/* Styling for the header */
+header {
+    background-color: #1f3bb6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #003135;
+    position: fixed;
+    top: 0;
+    width: 96.5%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Styling for the main content */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #16235d;
+    color: black;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+}
+
+/* Ensures the content does not overlap with the fixed header */
+main {
+    margin-top: 170px; /* Adjusted to avoid overlap with the header */
+    padding: 20px;
+}
+
+h1 {
+    color: #ffde59; /* Text color in header */
+    font-size: 45px;
+}
+h2 {
+    color: #0FA4AF;
+}
+h4 {
+    text-decoration: underline;
+}
+/* Styling for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6274c6;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #003135;
+}
+
+
+
+.toggle-btn {
+    background-color: white; 
+    border: 2px solid #000;
+    border-radius: 40px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.toggle-btn.clicked {
+    background-color: #003135;
+    color: black;
+}
+
+.toggle-btn:not(.clicked) {
+    background-color: white;
+    color: black;
+}
