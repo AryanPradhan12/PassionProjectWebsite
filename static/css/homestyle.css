@@ -38,13 +38,35 @@ h2 {
 }
 h4 {
     text-decoration: underline;
+    color: #ffde59;
+    font-weight: bold;
+}
+h9 {
+    color: #ffde59;
+}
+h6 {
+    color: #ffde59;
+    background-color: #6274c6;
+    padding: 10px;
+    width: fit-content;
+    height: 90px;
+    margin: 0 auto;
+    font-size: 25px;
+    border-radius: 15px;
+}
+.section1 {
+    background-color: #374ba6;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    margin: 0 auto;
 }
 /* Styling for the button */
 button {
     padding: 10px 20px;
     font-size: 16px;
     background-color: #6274c6;
-    color: white;
+    color: #ffde59;
     border: none;
     border-radius: 40px;
     cursor: pointer;
