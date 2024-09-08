@@ -39,7 +39,9 @@ h2 {
 h4 {
     text-decoration: underline;
     color: #ffde59;
-    font-weight: bold;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin: 0;
 }
 h9 {
     color: #ffde59;
@@ -49,17 +51,33 @@ h6 {
     background-color: #6274c6;
     padding: 10px;
     width: fit-content;
-    height: 90px;
-    margin: 0 auto;
     font-size: 25px;
     border-radius: 15px;
+    margin-top: -10px;
 }
 .section1 {
     background-color: #374ba6;
     width: fit-content;
     height: fit-content;
     border-radius: 25px;
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 10px;
+}
+h7 {
+    color: #ffde59;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #6274c6;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 15px;
+    margin-top: -10px;
+}
+h8 {
+    color: #ffde59;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
 }
 /* Styling for the button */
 button {
@@ -74,7 +92,7 @@ button {
 }
 
 button:hover {
-    background-color: #003135;
+    background-color: blue;
 }
 
 

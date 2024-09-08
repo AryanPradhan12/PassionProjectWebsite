@@ -1,5 +1,5 @@
 header {
-    background-color: #024950;
+    background-color: #1f3bb6;
     color: white;
     padding: 20px;
     text-align: center;
@@ -14,8 +14,8 @@ header {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #AFDDE5;
-    color: #333;
+    background-color: #16235d;
+    color: black;
     text-align: center;
     padding: 0;
     box-sizing: border-box;
@@ -24,8 +24,8 @@ body {
 
 button {
     padding: 10px 20px;
-    background-color: #555;
-    color: white;
+    background-color: #6274c6;
+    color: #ffde59;
     border: none;
     cursor: pointer;
     border-radius: 50px;
@@ -33,7 +33,7 @@ button {
 }
 
 button:hover {
-    background-color: #003135;
+    background-color: blue;
 }
 
 button:focus {
@@ -49,7 +49,7 @@ button.selected {
 }
 
 h1 {
-    color: #0FA4AF; /* Text color in header */
+    color: #ffde59; /* Text color in header */
     font-size: 45px;
 }
 

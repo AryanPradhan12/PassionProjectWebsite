@@ -1,6 +1,6 @@
 /* Styling for the header */
 header {
-    background-color: #024950;
+    background-color: #1f3bb6;
     color: white;
     padding: 20px;
     text-align: center;
@@ -16,8 +16,8 @@ header {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #AFDDE5;
-    color: #333;
+    background-color: #16235d;
+    color: black;
     text-align: center;
     padding: 0;
     box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
@@ -30,21 +30,67 @@ main {
 }
 
 h1 {
-    color: #0FA4AF; /* Text color in header */
+    color: #ffde59; /* Text color in header */
     font-size: 45px;
 }
 h2 {
-    color: #0FA4AF;
+    color: #ffde59;
 }
 h4 {
     text-decoration: underline;
+    color: #ffde59;
+    font-weight: bolder;
+    padding-bottom: 10px;
+    margin: 0;
+}
+h3 {
+    color: #ffde59;
+}
+h9 {
+    color: #ffde59;
+}
+p {
+    color: #ffde59;
+}
+h6 {
+    color: #ffde59;
+    background-color: #6274c6;
+    padding: 10px;
+    width: fit-content;
+    font-size: 25px;
+    border-radius: 15px;
+    margin-top: -10px;
+}
+.section1 {
+    background-color: #374ba6;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    margin: 20px auto;
+    padding: 10px;
+}
+h7 {
+    color: #ffde59;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #6274c6;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 15px;
+    margin-top: -10px;
+}
+h8 {
+    color: #ffde59;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 30px;
 }
 /* Styling for the button */
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #555;
-    color: white;
+    background-color: #6274c6;
+    color: #ffde59;
     border: none;
     border-radius: 40px;
     cursor: pointer;
@@ -52,13 +98,13 @@ button {
 }
 
 button:hover {
-    background-color: #003135;
+    background-color: blue;
 }
 
 
 
 .toggle-btn {
-    background-color: white; 
+    background-color: #1f3bb6; 
     border: 2px solid #000;
     border-radius: 40px;
     padding: 10px 20px;
@@ -69,11 +115,11 @@ button:hover {
 
 
 .toggle-btn.clicked {
-    background-color: #003135;
-    color: black;
+    background-color: #ffde59;
+    color: white;
 }
 
 .toggle-btn:not(.clicked) {
-    background-color: white;
-    color: black;
+    background-color: #1f3bb6;
+    color: white;
 }
